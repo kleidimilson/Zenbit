@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build:css": "tailwindcss -i ./src/input.css -o ./src/output.css",
-    "build": "npm run build:css"
+    "build": "npm run build:css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d src"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38"
   }
 }
