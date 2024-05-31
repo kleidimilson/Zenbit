@@ -562,6 +562,10 @@ html {
   position: relative;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .m-4 {
   margin: 1rem;
 }
